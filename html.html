@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lab 4 - Multimedia</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    #kong-background {
+      font-size: 60px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.1);
+      text-shadow: 0 0 10px rgba(255,255,255,0.5); /* Adding a glowing effect */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .image-container {
+      position: absolute;
+      animation: zoomInOut 5s infinite alternate;
+    }
+    @keyframes zoomInOut {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    #image2-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="image2-container">
+    <img src="image2.png" height="900" width="800" alt="KONG" title="This is Kong">
+  </div>
+
+  <div class="image-container" style="top: 0; left: 0;">
+    <img src="image3.png" height="300" width="200" alt="KONG" title="This is Kong">
+  </div>
+  <div class="image-container" style="top: 0; right: 0;">
+    <img src="image4.png" height="300" width="200" alt="KONG" title="This is Kong">
+  </div>
+  <div class="image-container" style="bottom: 0; left: 0;">
+    <img src="image5.png" height="300" width="200" alt="KONG" title="This is Kong">
+  </div>
+  <div class="image-container" style="bottom: 0; right: 0;">
+    <img src="image6.png" height="600" width="400" alt="KONG" title="This is Kong">
+  </div>
+
+  <div id="kong-background">
+    KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG KONG
+  </div>
+</body>
+</html>
